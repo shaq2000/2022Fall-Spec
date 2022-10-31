@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     [SerializeField] GameObject centerOfMass;
     [SerializeField] TextMeshProUGUI speedometerText;
-    [SerializeField] float speed;
+    private float speed = 5.0f;
 
     [SerializeField] List<WheelCollider> allWheels;
     [SerializeField] int wheelsOnGround;
@@ -44,11 +44,18 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
 
         // move the vehicle
-        // transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
 
-        playerRb.AddRelativeForce(Vector3.forward * verticalInput * horsePower);
-        speed = Mathf.Round(playerRb.velocity.magnitude * 2.237f); // 3.6 for kph
-        speedometerText.text = "Speed: " + speed;
+        // playerRb.AddRelativeForce(Vector3.forward * verticalInput * horsePower);
+        // speed = Mathf.Round(playerRb.velocity.magnitude * 2.237f); // 3.6 for kph
+        if (verticalInput != 0){
+            speedometerText.text = "Speed: " + speed;
+        }
+        else
+        {
+            speedometerText.text = "Speed: " + '0';
+        }
+
         // rotates the vehicle based on horizontal input
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
 

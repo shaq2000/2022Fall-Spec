@@ -408,7 +408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142386309}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 5.685958, y: -57.579826, z: 94.965576}
+  m_LocalPosition: {x: -4.7, y: -57.579826, z: 95}
   m_LocalScale: {x: 200.00002, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 645276457}
@@ -1343,7 +1343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566434518}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 23.785957, y: -57.579826, z: 95.16557}
+  m_LocalPosition: {x: 33.8, y: -57.579826, z: 95.16557}
   m_LocalScale: {x: 200.00002, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 645276457}
@@ -1836,6 +1836,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1014797949310951927, guid: e7db4011ca7f11c408c1ad18b34ed04d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014797949310951927, guid: e7db4011ca7f11c408c1ad18b34ed04d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.490141
       objectReference: {fileID: 0}
@@ -2307,7 +2311,6 @@ MonoBehaviour:
   horsePower: 20000
   centerOfMass: {fileID: 963397953}
   speedometerText: {fileID: 187676386}
-  speed: 0
   allWheels:
   - {fileID: 1399812383}
   - {fileID: 1484087995}
@@ -2774,7 +2777,7 @@ Transform:
   m_GameObject: {fileID: 1494990011}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 15.185958, y: -57.579826, z: -3.6344242}
-  m_LocalScale: {x: 20, y: 1, z: 1}
+  m_LocalScale: {x: 40, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 645276457}
   m_RootOrder: 2
@@ -3368,7 +3371,7 @@ Transform:
   m_GameObject: {fileID: 2069710207}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 15.185958, y: -57.579826, z: 196.66557}
-  m_LocalScale: {x: 20, y: 1, z: 1}
+  m_LocalScale: {x: 40, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 645276457}
   m_RootOrder: 3
